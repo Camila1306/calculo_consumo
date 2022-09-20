@@ -20,6 +20,6 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\CombustivelController;
 
-Route:: get ('/', 'CombustivelController@index');
+Route:: get ('/', CombustivelController::class, 'index');
 
-Route::get('/gasto', 'CombustivelController@gasto');
+Route::get('/gasto', CombustivelController::class,'gasto');
